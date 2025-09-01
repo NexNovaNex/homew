@@ -1,6 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const BuyBox = () => {
+  const [selectedQuantity, setSelectedQuantity] = useState(1);
+  
+  const pricing = {
+    1: { price: 39, savings: 0 },
+    2: { price: 77, savings: 1 },
+    3: { price: 109, savings: 8 },
+    4: { price: 139, savings: 17 }
+  };
+
+  const selectedPrice = pricing[selectedQuantity as keyof typeof pricing];
+
   return (
     <section id="pricing-section" className="w-full flex flex-col items-center bg-white py-8 md:py-16 px-2 md:px-4">
       <div className="max-w-3xl w-full mx-auto rounded-2xl shadow-2xl bg-gradient-to-br from-blue-50 via-white to-blue-50 border-2 border-blue-200 p-0 md:p-0">
@@ -19,14 +30,38 @@ const BuyBox = () => {
             />
           </div>
 
-          {/* Single CTA Button */}
+          {/* Quantity Selection */}
+          <div className="mb-6">
+            <h3 className="text-lg font-semibold text-gray-800 mb-4">Choose Your Package:</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+              {Object.entries(pricing).map(([quantity, { price, savings }]) => (
+                <button
+                  key={quantity}
+                  onClick={() => setSelectedQuantity(parseInt(quantity))}
+                  className={`p-3 rounded-xl border-2 transition-all ${
+                    selectedQuantity === parseInt(quantity)
+                      ? 'border-blue-600 bg-blue-50 text-blue-700 shadow-lg'
+                      : 'border-gray-200 bg-white text-gray-700 hover:border-blue-300'
+                  }`}
+                >
+                  <div className="font-bold text-lg">{quantity}x</div>
+                  <div className="font-bold text-xl">${price}</div>
+                  {savings > 0 && (
+                    <div className="text-xs text-green-600 font-medium">Save ${savings}</div>
+                  )}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* CTA Button */}
           <a
             className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-full text-xl transition flex items-center justify-center gap-2 shadow-lg mt-2 mb-6"
             href="https://odorgo.store/products/odorgo-get-rid-of-any-smell-and-bacteria-in-just-30-minutes"
             target="_blank"
             rel="noopener noreferrer"
           >
-            GET YOUR ODORGO NOW
+            GET YOUR ODORGO NOW - ${selectedPrice.price}
           </a>
 
           {/* Money Back Guarantee */}
