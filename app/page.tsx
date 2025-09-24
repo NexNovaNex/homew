@@ -240,7 +240,7 @@ export default function Page() {
           </div>
           <div className="flex justify-center">
             <a 
-              href="https://odorgo.store/products/odorgo-get-rid-of-any-smell-and-bacteria-in-just-30-minutes"
+              href="https://newsrelease.odorgo.store/new-checkout-1695176203-1702051815-1702053141-1706890883"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full text-lg transition"
@@ -560,7 +560,7 @@ export default function Page() {
             </div>
             <div className="flex justify-center">
               <a
-                href="https://odorgo.store/products/odorgo-get-rid-of-any-smell-and-bacteria-in-just-30-minutes"
+                href="https://newsrelease.odorgo.store/new-checkout-1695176203-1702051815-1702053141-1706890883"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-12 rounded-full text-xl transition shadow-lg"
@@ -799,12 +799,13 @@ export default function Page() {
             </blockquote>
             
             <a 
-              href="https://odorgo.store/products/odorgo-get-rid-of-any-smell-and-bacteria-in-just-30-minutes"
+              href="https://newsrelease.odorgo.store/new-checkout-1695176203-1702051815-1702053141-1706890883"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-12 rounded-full text-xl transition"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-6 md:px-12 rounded-full text-lg md:text-xl transition w-full md:w-auto inline-block"
             >
-              Order OdorGo Today and Get Your Freedom Back
+              <span className="block md:hidden">Get Your OdorGo Now</span>
+              <span className="hidden md:block">Order OdorGo Today and Get Your Freedom Back</span>
             </a>
           </div>
         </div>
@@ -821,7 +822,7 @@ export default function Page() {
               Ready to eliminate smoke odors from your home?
             </div>
             <a
-              href="https://odorgo.store/products/odorgo-get-rid-of-any-smell-and-bacteria-in-just-30-minutes"
+              href="https://newsrelease.odorgo.store/new-checkout-1695176203-1702051815-1702053141-1706890883"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white hover:bg-gray-100 text-blue-600 font-bold py-2 px-6 rounded-full transition shadow-lg"

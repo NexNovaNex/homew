@@ -21,12 +21,12 @@ const BuyBox = () => {
 
           {/* Single CTA Button */}
           <a
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-full text-xl transition flex items-center justify-center gap-2 shadow-lg mt-2 mb-6"
-            href="https://odorgo.store/products/odorgo-get-rid-of-any-smell-and-bacteria-in-just-30-minutes"
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-full text-lg md:text-xl transition flex items-center justify-center gap-2 shadow-lg mt-2 mb-6 px-4 md:px-8"
+            href="https://newsrelease.odorgo.store/new-checkout-1695176203-1702051815-1702053141-1706890883"
             target="_blank"
             rel="noopener noreferrer"
           >
-            GET YOUR ODORGO NOW
+            <span className="text-center">GET YOUR ODORGO NOW</span>
           </a>
 
           {/* Money Back Guarantee */}
